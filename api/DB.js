@@ -1,3 +1,5 @@
+// DB.js
+
 module.exports = {
-    DB: 'mongodb://localhost:27017/reactcrud'
+    DB: 'mongodb+srv://aditya-m:twaditya123@twitterdata-s8ugt.mongodb.net/TwitterDatabase?retryWrites=true'
 }

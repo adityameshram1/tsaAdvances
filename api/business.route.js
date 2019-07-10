@@ -11,10 +11,10 @@ businessRoutes.route('/add').post(function (req, res) {
   let business = new Business(req.body);
   business.save()
     .then(business => {
-      res.status(200).json({'business': 'business in added successfully'});
+      res.status(200).json({'business': 'SearchTerm was added to the database!'});
     })
     .catch(err => {
-      res.status(400).send("unable to save to database");
+      res.status(400).send("Unable to add the SearchTerm to the database!");
     });
 });
 
@@ -23,6 +23,7 @@ businessRoutes.route('/').get(function (req, res) {
     Business.find(function(err, businesses){
     if(err){
       console.log(err);
+      console.log("Couldn't fetch data");
     }
     else {
       res.json(businesses);

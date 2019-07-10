@@ -1,0 +1,113 @@
+.formAlign{
+    text-align: center;
+}
+/* .mainDiv{
+    /* text-align: center; */
+    /* background-image: url("../assets/images/t1.jpg"); 
+
+} */
+/* .mainDiv1{
+    text-align: center;
+    margin: 200px 200px 30px 200px !important;
+    background-color:rgba(255, 255, 255, 0.5)} */
+.mainDiv2{
+    text-align: center;
+}
+.btnColor{
+    background:#00ACEE;
+}
+
+.input11{
+    
+    
+    /* margin-right: auto;
+    margin-left: auto;
+    margin-top: 50%;
+    margin-bottom: 50%; */
+    /* display: inline-block; */
+    position: fixed;
+    top: 20%;
+    bottom: 90%;
+    left: 0;
+    right: 0;
+    width: 30%;
+    /* height: 100px; */
+    margin: auto;
+    /* opacity: 0.8; */
+}
+
+.headerCss{
+    /* background:#00ACEE; */
+    background: #00ACEE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00ACEE, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00ACEE, #8B0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:white;
+    
+}
+.footerCss{
+    position:absolute !important;
+    bottom:0 !important;
+    width:100% !important;
+    background:#00ACEE;
+}
+.image1{
+    width:20px !important;
+    height:20px !important; 
+}
+
+body{
+    /* background-image: url("../assets/images/dataBGI-1.jpg");  */
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html{
+    height: 100%
+}
+
+.TrendingTweets{
+    position: fixed;
+    top: 40%;
+    bottom: 90%;
+    left: 0%;
+    right: 50%;
+    width: 30%;
+    /* height: 200px; */
+    margin: auto;
+    /* opacity: 0.7; */
+    /* overflow:auto; */
+
+
+}
+
+.TrendingHashtags{
+    position: fixed;
+    top: 40%;
+    bottom: 90%;
+    left: 50%;
+    right: 0%;
+    width: 30%;
+    /* height: 100px; */
+    margin: auto;
+    /* opacity: 0.7; */
+
+
+}
+.Title{
+    background-color: #00ACEE !important;
+}
+
+.caro{
+    margin-top: 600px !important;
+}
+
+.Trending{
+    top: 90%;
+    bottom: 90%;
+    right: 50%;
+    margin: 13% 30% 30% 25%; 
+    /* height:10%; */
+    
+}

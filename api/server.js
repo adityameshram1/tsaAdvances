@@ -17,7 +17,9 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use('/business', businessRoute);
+app.use('/searchterms', businessRoute);
+app.use('/twitterdata', businessRoute);
+
 
 app.listen(PORT, function(){
   console.log('Server is running on Port:',PORT);

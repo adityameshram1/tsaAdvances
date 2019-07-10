@@ -1,0 +1,20 @@
+.backGcolor{
+background-color: white;
+}
+
+body{
+    background-color: white; 
+    height: 100%;
+    margin: 0;
+
+}
+
+.meter{
+    bottom:90% !important;
+    top:90%!important;
+    margin:3% 6% 6% 13%;
+}
+
+.Bar-Chart{
+    width:50% !important;
+}

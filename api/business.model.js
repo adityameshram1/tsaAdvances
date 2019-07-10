@@ -2,18 +2,42 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Define collection and schema for Business
-let Business = new Schema({
-  person_name: {
+
+let TwitterData = new Schema({
+  SearchTerms: {
     type: String
   },
-  business_name: {
-    type: String
-  },
-  business_gst_number: {
+  no_positive_tweets: {
     type: Number
-  }
-},{
-    collection: 'business'
+  },
+  no_negative_tweets: {
+      type: Number
+  },
+  male_positive_tweets: {
+    type: Number
+ },
+  female_positive_tweets: {
+    type: Number
+ },
+  male_negative_tweets: {
+    type: Number
+},
+  female_negative_tweets: {
+    type: Number
+}
+}, { 
+  collection: 'twitterdata'
 });
 
-module.exports = mongoose.model('Business', Business);
+let SearchTerms = new Schema({
+  SearchTerms: {
+    type: String
+  },
+},{
+    collection: 'searchterms'
+});
+
+
+
+module.exports = mongoose.model('TwitterData', TwitterData);
+module.exports = mongoose.model('SearchTerms', SearchTerms);
