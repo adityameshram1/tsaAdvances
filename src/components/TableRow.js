@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import ReactSpeedometer from 'react-d3-speedometer';
 
 class TableRow extends Component {
 
@@ -10,23 +11,25 @@ class TableRow extends Component {
     
   render() {
     return (
-        <tr>
-          <td>
-            {this.props.obj.person_name}
-          </td>
-          <td>
-            {this.props.obj.business_name}
-          </td>
-          <td>
-            {this.props.obj.business_gst_number}
-          </td>
-          <td>
-            <Link to={"/edit/"+this.props.obj._id} className="btn btn-primary">Edit</Link>
-          </td>
-          <td>
-            <button onClick={this.delete} className="btn btn-danger">Delete</button>
-          </td>
-        </tr>
+      
+          <div>
+            <p>{this.props.obj.no_positive_tweets}</p>
+          
+          
+            <p>{this.props.obj.no_negative_tweets}</p>
+         
+            <p>{this.props.obj.male_positive_tweets}</p>
+            
+
+           
+
+
+
+
+
+
+
+            </div>
     );
   }
 }

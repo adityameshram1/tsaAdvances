@@ -4,9 +4,7 @@ const Schema = mongoose.Schema;
 // Define collection and schema for Business
 
 let TwitterData = new Schema({
-  SearchTerms: {
-    type: String
-  },
+ 
   no_positive_tweets: {
     type: Number
   },
